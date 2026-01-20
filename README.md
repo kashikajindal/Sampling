@@ -58,11 +58,11 @@ The dataset is highly imbalanced, so balancing techniques are required before mo
 
 | Model | Sampling1 | Sampling2 | Sampling3 | Sampling4 | Sampling5 |
 | ----- | --------- | --------- | --------- | --------- | --------- |
-| M1    | 50.10     | 52.24     | 63.18     | 69.23     | 70.12     |
-| M2    | 59.25     | 65.27     | 68.72     | 28.36     | 30.25     |
-| M3    | 90.45     | 72.41     | 32.17     | 42.58     | 41.85     |
-| M4    | 78.25     | 56.24     | 47.23     | 33.44     | 40.12     |
-| M5    | 81.25     | 12.85     | 57.36     | 32.25     | 52.74     |
+| M1    | 66.67     | 91.70     | 90.39     | 98.70     | 92.17     |
+| M2    | 66.67     | 98.47     | 98.25     | 97.39     | 98.43     |
+| M3    | 50.00     | 99.78     | 99.34     | 98.70     | 99.55     |
+| M4    | 16.67     | 98.47     | 84.72     | 98.70     | 85.23     |
+| M5    | 50.00     | 78.17     | 84.50     | 95.22     | 89.26     |
 
 ---
 
@@ -70,18 +70,20 @@ The dataset is highly imbalanced, so balancing techniques are required before mo
 
 | Model | Best Sampling | Accuracy |
 | ----- | ------------- | -------- |
-| M1    | Sampling5     | 70.12%   |
-| M2    | Sampling3     | 68.72%   |
-| M3    | Sampling1     | 90.45%   |
-| M4    | Sampling1     | 78.25%   |
-| M5    | Sampling1     | 81.25%   |
+| M1    | Sampling4     | 98.70%   |
+| M2    | Sampling2     | 98.47%   |
+| M3    | Sampling2     | 99.78%   |
+| M4    | Sampling4     | 98.70%   |
+| M5    | Sampling4     | 95.22%   |
 
 ---
 
 ## 📌 Observations
 
-* Random Under Sampling performed best for most models.
-* Random Forest achieved the highest accuracy among all models.
+* Sampling4 (Tomek Links) produced the best results for most models.
+* Sampling2 (Random Over Sampling) worked best for Decision Tree and Random Forest models.
+* Random Forest (M3) achieved the highest overall accuracy (99.78%).
+* Sampling techniques significantly influence model performance on imbalanced datasets.
 * Sampling technique selection has a significant impact on model performance.
 
 ---
