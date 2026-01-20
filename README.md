@@ -1,0 +1,1 @@
+This experiment shows that the choice of sampling technique strongly affects model performance. Under-sampling performed consistently well across multiple classifiers, while SMOTE showed better results for tree-based models. Random Forest achieved the highest accuracy, indicating its robustness on balanced datasets.
